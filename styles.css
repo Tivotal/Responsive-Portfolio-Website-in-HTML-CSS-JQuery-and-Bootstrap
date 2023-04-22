@@ -1,0 +1,604 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.5rem rgba(51, 51, 51, 0.5);
+}
+
+.header a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.header .fa-bars {
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+.header .logo h1 {
+  color: #225687;
+  margin-bottom: 0;
+}
+
+.header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .navbar ul li {
+  margin: 0 1.5rem;
+}
+
+.header .navbar ul li a:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid #225687;
+}
+
+.home {
+  background: url(images/home.png) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home h2 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.home h1 {
+  font-size: 4rem;
+  color: #333;
+  margin: 2rem 0;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.9);
+}
+
+.home h1 span {
+  color: #225687;
+  margin: 0;
+}
+
+.home button {
+  height: 4rem;
+  width: 16rem;
+  background: #333;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
+}
+
+.home button:hover {
+  background: #225687;
+}
+
+.about {
+  padding-bottom: 3rem;
+}
+
+.about .heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin: 3rem 0;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.about .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 5rem;
+  background: #333;
+}
+
+.about .info {
+  padding: 0 2rem;
+}
+
+.about .info h2 {
+  font-size: 3rem;
+  color: #225687;
+}
+
+.about .info p {
+  font-size: 1.7rem;
+  color: #333;
+  padding-bottom: 3rem;
+}
+
+.about .info .skill-bar h3 {
+  margin-top: 2rem;
+}
+
+.about .info .skill-bar h3 span {
+  display: block;
+  text-align: end;
+}
+
+.about .info .skill-bar .bar {
+  width: 100%;
+  height: 0.5rem;
+  background: #ccc;
+  position: relative;
+}
+
+.about .info .skill-bar .bar span {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #225687;
+}
+
+.about .info .skill-bar .bar1 span {
+  width: 98%;
+}
+
+.about .info .skill-bar .bar2 span {
+  width: 90%;
+}
+
+.about .info .skill-bar .bar3 span {
+  width: 85%;
+}
+
+.about .info .skill-bar .bar4 span {
+  width: 80%;
+}
+
+.service {
+  min-height: 100vh;
+}
+
+.service .heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin: 3rem 0;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.service .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 5rem;
+  background: #333;
+}
+
+.service .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service .box-container .box {
+  height: 20rem;
+  width: 25rem;
+  background: #f7f7f7;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 5rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+.service .box-container .box img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.service .box-container .box h2 {
+  padding-top: 1rem;
+  color: #333;
+}
+
+.service .box-container .box:hover {
+  background: #333;
+}
+
+.service .box-container .box:hover h2 {
+  color: #fff;
+}
+
+.service .box-container .box:hover img {
+  filter: invert(1);
+}
+
+.experience {
+  min-height: 100vh;
+  background: #333;
+}
+
+.experience .heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin: 3rem 0;
+  padding-top: 6rem;
+  position: relative;
+  color: #fff;
+}
+
+.experience .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 5rem;
+  background: #333;
+}
+
+.experience .heading::after {
+  background: #fff;
+}
+
+.experience .box {
+  height: 23rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  border-left: 0.1rem solid #fff;
+  position: relative;
+}
+
+.experience .box::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  border-radius: 5rem;
+}
+
+.experience .box .year {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.experience .box h3 {
+  font-size: 2rem;
+  color: orange;
+  margin: 1rem 0;
+}
+
+.experience .box p {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.counter {
+  width: 100%;
+  background: linear-gradient(180deg, #333 50%, #fff 50%);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.counter .counter-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
+}
+
+.counter .counter-box .count {
+  margin: 2rem 3.5rem;
+}
+
+.counter .counter-box .count .number {
+  font-size: 3.5rem;
+  color: #225687;
+}
+
+.counter .counter-box .count h2 {
+  font-size: 1.7rem;
+}
+
+.portfolio {
+  min-height: 100vh;
+}
+
+.portfolio .heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin: 3rem 0;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.portfolio .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 5rem;
+  background: #333;
+}
+
+.portfolio .controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.portfolio .controls .buttons {
+  height: 4rem;
+  width: 15rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.portfolio .controls .buttons:hover {
+  background: #225687;
+  box-shadow: 0 0.5rem 0.5rem rgba(51, 51, 51, 0.3);
+}
+
+.portfolio .controls .active {
+  background: #225687;
+  box-shadow: 0 0.5rem 0.5rem rgba(51, 51, 51, 0.3);
+}
+
+.portfolio .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio .images .filter-image {
+  height: 18rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.portfolio .images .filter-image:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  min-height: 90vh;
+}
+
+.contact .heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin: 3rem 0;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.contact .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 5rem;
+  background: #333;
+}
+
+.contact .inputBox {
+  padding: 0 1rem;
+}
+
+.contact .inputBox .name,
+.contact .inputBox .phone,
+.contact .inputBox .email,
+.contact .inputBox textarea {
+  height: 3rem;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #333;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+}
+
+.contact .inputBox .phone:focus,
+.contact .inputBox .name:focus,
+.contact .inputBox .email:focus,
+.contact .inputBox textarea:focus {
+  border-bottom: 0.2rem solid #225687;
+}
+
+.contact .inputBox .phone,
+.contact .inputBox .name {
+  width: 45%;
+}
+
+.contact .inputBox textarea {
+  height: 20rem;
+  border: 0.1rem solid #333;
+  resize: none;
+}
+
+.contact .inputBox textarea:focus {
+  border: 0.2rem solid #225687;
+}
+
+.contact .name-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact input[type="submit"] {
+  height: 4rem;
+  width: 12rem;
+  background: #333;
+  color: #fff;
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.contact input[type="submit"]:hover {
+  background: #225687;
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
+}
+
+.contact .info .info-box {
+  margin: 4.5rem 1rem;
+}
+
+.contact .info .info-box h2 {
+  font-size: 2rem;
+  color: #225687;
+}
+
+.contact .info .info-box h2 i {
+  padding: 0 1rem;
+  color: #333;
+}
+
+.contact .info .info-box p {
+  font-size: 1.8rem;
+  color: #666;
+  padding-left: 3.5rem;
+}
+
+.footer {
+  background: #f9f9f9;
+  padding: 1.5rem 0;
+  border-top: 0.1rem solid rgba(51, 51, 51, 0.3);
+}
+
+.footer h1 {
+  color: #333;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-bottom: 0;
+  letter-spacing: 0.1rem;
+}
+
+.footer h1 span {
+  color: #225687;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #225687;
+  border-radius: 2rem;
+}
+
+.header .fa-times {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .home {
+    background-position: center;
+  }
+  .header .fa-bars {
+    display: block;
+  }
+  .header .navbar {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    height: calc(100vh - 5.2rem);
+    width: 100vw;
+    background: #fff;
+    border-top: 0.1rem solid rgba(51, 51, 51, 0.3);
+  }
+  .header .navbar ul {
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .header .navbar ul li {
+    margin: 1.5rem 0;
+  }
+  .header .navbar ul li a {
+    font-size: 2.5rem;
+  }
+  .header .nav-toggle {
+    top: 5rem;
+  }
+}
