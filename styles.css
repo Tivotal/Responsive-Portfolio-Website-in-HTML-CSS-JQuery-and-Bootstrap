@@ -38,16 +38,16 @@ body {
   color: #333;
 }
 
+.header .logo h1 {
+  color: #225687;
+  margin-bottom: 0;
+}
+
 .header .fa-bars {
   font-size: 3rem;
   color: #333;
   cursor: pointer;
   display: none;
-}
-
-.header .logo h1 {
-  color: #225687;
-  margin-bottom: 0;
 }
 
 .header .navbar ul {
@@ -274,10 +274,6 @@ body {
   transform: translateX(-50%);
   height: 0.3rem;
   width: 5rem;
-  background: #333;
-}
-
-.experience .heading::after {
   background: #fff;
 }
 
@@ -447,6 +443,26 @@ body {
   background: #333;
 }
 
+.contact .info .info-box {
+  margin: 4.5rem 1rem;
+}
+
+.contact .info .info-box h2 {
+  font-size: 2rem;
+  color: #225687;
+}
+
+.contact .info .info-box h2 i {
+  padding: 0 1rem;
+  color: #333;
+}
+
+.contact .info .info-box p {
+  font-size: 1.8rem;
+  color: #666;
+  padding-left: 3.5rem;
+}
+
 .contact .inputBox {
   padding: 0 1rem;
 }
@@ -466,11 +482,9 @@ body {
   font-size: 1.8rem;
 }
 
-.contact .inputBox .phone:focus,
-.contact .inputBox .name:focus,
-.contact .inputBox .email:focus,
-.contact .inputBox textarea:focus {
-  border-bottom: 0.2rem solid #225687;
+.contact .name-box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact .inputBox .phone,
@@ -484,13 +498,15 @@ body {
   resize: none;
 }
 
+.contact .inputBox .phone:focus,
+.contact .inputBox .name:focus,
+.contact .inputBox .email:focus,
 .contact .inputBox textarea:focus {
-  border: 0.2rem solid #225687;
+  border-bottom: 0.2rem solid #225687;
 }
 
-.contact .name-box {
-  display: flex;
-  justify-content: space-between;
+.contact .inputBox textarea:focus {
+  border: 0.2rem solid #225687;
 }
 
 .contact input[type="submit"] {
@@ -509,26 +525,6 @@ body {
 .contact input[type="submit"]:hover {
   background: #225687;
   box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
-}
-
-.contact .info .info-box {
-  margin: 4.5rem 1rem;
-}
-
-.contact .info .info-box h2 {
-  font-size: 2rem;
-  color: #225687;
-}
-
-.contact .info .info-box h2 i {
-  padding: 0 1rem;
-  color: #333;
-}
-
-.contact .info .info-box p {
-  font-size: 1.8rem;
-  color: #666;
-  padding-left: 3.5rem;
 }
 
 .footer {
